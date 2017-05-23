@@ -28,5 +28,6 @@ public class AsocArrayTest {
 		array.put(CLAVE1, VALOR1);
 		assertEquals(VALOR1, array.get(CLAVE1));
 	}
+	
 
 }
