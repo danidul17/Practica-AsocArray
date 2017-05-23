@@ -44,5 +44,9 @@ public class AsocArrayTest {
 			assertEquals(VALOR1, array.get(CLAVE1));
 			assertEquals(2,array.size());
 	}
+	@Test(expected = UndefinedKeyException.class)
+	public void elevoExcepcionClaveNoEncontrada() throws UndefinedKeyException{
+		array.get(CLAVE1);
+	}
 
 }
