@@ -75,6 +75,12 @@ public class AsocArrayTest {
 		array.put(CLAVE1,VALOR1);
 		assertEquals(true,array.remove(CLAVE1));
 	}
+	@Test
+	public void NodevuelveValorPorDefecto(){
+		array.put(CLAVE1,VALOR1);
+		assertEquals("nulo", array.getOrElse(CLAVE2,"nulo"));
+	}
+	
 	
 
 
