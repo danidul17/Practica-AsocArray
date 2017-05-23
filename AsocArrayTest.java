@@ -57,7 +57,12 @@ public class AsocArrayTest {
 		array.put(CLAVE1, VALOR1);	
 		assertEquals(true, array.containsKey(CLAVE1));
 	}
-	
+	@Test
+	public void devuelveValorPorDefecto(){
+		array.put(CLAVE1,VALOR1);
+		assertEquals(VALOR1, array.getOrElse(CLAVE1,"nulo"));
+		assertEquals("nulo", array.getOrElse(CLAVE2,"nulo"));
+	}
 
 
 	
