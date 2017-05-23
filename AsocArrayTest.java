@@ -71,7 +71,7 @@ public class AsocArrayTest {
 		assertEquals(false,array.remove(CLAVE1));
 	}
 	@Test
-	public void eliminacion()  {
+	public void eliminacionUnDato()  {
 		array.put(CLAVE1,VALOR1);
 		assertEquals(true,array.remove(CLAVE1));
 	}
