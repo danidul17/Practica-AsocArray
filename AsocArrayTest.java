@@ -57,6 +57,8 @@ public class AsocArrayTest {
 		array.put(CLAVE1, VALOR1);	
 		assertEquals(true, array.containsKey(CLAVE1));
 	}
+	
+
 
 	
 	
