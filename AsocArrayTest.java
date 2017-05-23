@@ -37,6 +37,13 @@ public class AsocArrayTest {
 	assertEquals(VALOR1, array.get(CLAVE1));
 	assertEquals(VALOR2, array.get(CLAVE2));
 	}
-	
+	@Test
+	public void anadoValoresYClaves() throws UndefinedKeyException {
+			
+			array.put(CLAVE1,VALOR1);
+			array.put(CLAVE2,VALOR2);
+			assertEquals(VALOR1, array.get(CLAVE1));
+			assertEquals(2,array.size());
+	}
 
 }
