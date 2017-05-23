@@ -52,6 +52,11 @@ public class AsocArrayTest {
 	public void claveNoExiste(){
 		assertEquals(false, array.containsKey(CLAVE1));
 	}
+	@Test
+	public void claveexiste() {
+		array.put(CLAVE1, VALOR1);	
+		assertEquals(true, array.containsKey(CLAVE1));
+	}
 
 	
 	
