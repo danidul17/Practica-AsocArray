@@ -12,6 +12,8 @@ public class AsocArrayTest {
 
 	private static final String CLAVE1 = "nombre";
 	private static final String VALOR1 = "pepe";
+	private static final String CLAVE2 = "apellido";
+	private static final String VALOR2 = "gonzales";
 	private AsocArray array;
 
 	@Before
@@ -28,6 +30,12 @@ public class AsocArrayTest {
 		array.put(CLAVE1, VALOR1);
 		assertEquals(VALOR1, array.get(CLAVE1));
 	}
-	
+	@Test
+	public void creacionDelArrayConVariosDatos() throws UndefinedKeyException{
+	array.put(CLAVE1, VALOR1);
+	array.put(CLAVE2, VALOR2);
+	assertEquals(VALOR1, array.get(CLAVE1));
+	assertEquals(VALOR2, array.get(CLAVE2));
+	}
 
 }
