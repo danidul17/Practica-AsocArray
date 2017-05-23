@@ -15,4 +15,5 @@ public class AsocArrayTest {
 		array = new AsocArray();
 		assertEquals(0, array.size());
 	}
+
 }
