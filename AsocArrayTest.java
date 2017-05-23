@@ -48,6 +48,12 @@ public class AsocArrayTest {
 	public void elevoExcepcionClaveNoEncontrada() throws UndefinedKeyException{
 		array.get(CLAVE1);
 	}
+	@Test
+	public void claveNoExiste(){
+		assertEquals(false, array.containsKey(CLAVE1));
+	}
+	
+	
 
 
 }
