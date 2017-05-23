@@ -70,7 +70,12 @@ public class AsocArrayTest {
 		assertEquals(true,array.remove(CLAVE1));
 		assertEquals(false,array.remove(CLAVE1));
 	}
-
+	@Test
+	public void eliminacion()  {
+		array.put(CLAVE1,VALOR1);
+		assertEquals(true,array.remove(CLAVE1));
+	}
+	
 
 
 	
