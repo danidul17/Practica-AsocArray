@@ -63,7 +63,13 @@ public class AsocArrayTest {
 		assertEquals(VALOR1, array.getOrElse(CLAVE1,"nulo"));
 		assertEquals("nulo", array.getOrElse(CLAVE2,"nulo"));
 	}
-	
+	@Test
+	public void eliminacionDePares(){
+		array.put(CLAVE2,VALOR2);
+		array.put(CLAVE1,VALOR1);
+		assertEquals(true,array.remove(CLAVE1));
+		assertEquals(false,array.remove(CLAVE1));
+	}
 
 
 	
